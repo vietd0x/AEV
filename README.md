@@ -16,7 +16,7 @@ It is a static site. Any of these work:
 - **Serve it** (recommended, needed for the `?demo` autoload):
 
 ```bash
-cd bh-ioe
+cd aev
 python -m http.server 8777
 # then open http://localhost:8777/
 ```
@@ -89,7 +89,7 @@ the dashboard never claims Entra ID is healthy on the strength of AD-only data.
 ## Project layout
 
 ```
-bh-ioe/
+aev/
 ├── index.html          # page shell (loads the scripts below)
 ├── styles.css          # theme (light/dark), layout
 ├── data/catalog.js     # indicator catalog: metadata + descriptive text
