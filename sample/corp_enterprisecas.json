@@ -1,0 +1,30 @@
+{
+ "data": [
+  {
+   "Properties": {
+    "domain": "CORP.LOCAL",
+    "name": "CORP-CA@CORP.LOCAL",
+    "caname": "CORP-CA",
+    "dnshostname": "ca01.corp.local",
+    "objectid": "ECA-0001",
+    "isuserspecifiessanenabled": true
+   },
+   "ObjectIdentifier": "ECA-0001",
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-1111111111-2222222222-3333333333-1107",
+     "PrincipalType": "User",
+     "RightName": "ManageCA",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false
+  }
+ ],
+ "meta": {
+  "methods": 0,
+  "type": "enterprisecas",
+  "count": 1,
+  "version": 6
+ }
+}

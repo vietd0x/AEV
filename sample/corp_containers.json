@@ -1,0 +1,27 @@
+{
+ "data": [
+  {
+   "Properties": {
+    "domain": "CORP.LOCAL",
+    "name": "ADMINSDHOLDER@CORP.LOCAL",
+    "objectid": "C-0001",
+    "distinguishedname": "CN=AdminSDHolder,CN=System,DC=CORP,DC=LOCAL"
+   },
+   "ObjectIdentifier": "C-0001",
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-1111111111-2222222222-3333333333-1109",
+     "PrincipalType": "User",
+     "RightName": "GenericAll",
+     "IsInherited": false
+    }
+   ]
+  }
+ ],
+ "meta": {
+  "methods": 0,
+  "type": "containers",
+  "count": 1,
+  "version": 6
+ }
+}

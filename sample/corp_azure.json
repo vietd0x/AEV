@@ -1,0 +1,229 @@
+{
+ "data": [
+  {
+   "kind": "AZTenant",
+   "data": {
+    "id": "11111111-2222-3333-4444-555555555555",
+    "displayName": "CORP"
+   }
+  },
+  {
+   "kind": "AZUser",
+   "data": {
+    "id": "u-ga-old",
+    "displayName": "cloudadmin_old",
+    "userPrincipalName": "cloudadmin_old@corp.local",
+    "accountEnabled": true,
+    "createdDateTime": "2025-08-14T07:46:48Z",
+    "tenantId": "11111111-2222-3333-4444-555555555555",
+    "signInActivity": {
+     "lastSignInDateTime": "2025-11-22T07:46:48Z"
+    }
+   }
+  },
+  {
+   "kind": "AZUser",
+   "data": {
+    "id": "u-ga-never",
+    "displayName": "cloudadmin_new",
+    "userPrincipalName": "cloudadmin_new@corp.local",
+    "accountEnabled": true,
+    "createdDateTime": "2026-03-02T07:46:48Z",
+    "tenantId": "11111111-2222-3333-4444-555555555555"
+   }
+  },
+  {
+   "kind": "AZUser",
+   "data": {
+    "id": "u-ga-active",
+    "displayName": "cloudadmin_active",
+    "userPrincipalName": "cloudadmin_active@corp.local",
+    "accountEnabled": true,
+    "createdDateTime": "2025-08-14T07:46:48Z",
+    "tenantId": "11111111-2222-3333-4444-555555555555",
+    "signInActivity": {
+     "lastSignInDateTime": "2026-09-16T07:46:48Z"
+    }
+   }
+  },
+  {
+   "kind": "AZUser",
+   "data": {
+    "id": "u-old",
+    "displayName": "alice_cloud",
+    "userPrincipalName": "alice_cloud@corp.local",
+    "accountEnabled": true,
+    "createdDateTime": "2025-08-14T07:46:48Z",
+    "tenantId": "11111111-2222-3333-4444-555555555555",
+    "signInActivity": {
+     "lastSignInDateTime": "2026-01-11T07:46:48Z"
+    },
+    "onPremisesSecurityIdentifier": "S-1-5-21-1111111111-2222222222-3333333333-1101"
+   }
+  },
+  {
+   "kind": "AZUser",
+   "data": {
+    "id": "u-never",
+    "displayName": "temp_contractor",
+    "userPrincipalName": "temp_contractor@corp.local",
+    "accountEnabled": true,
+    "createdDateTime": "2026-04-21T07:46:48Z",
+    "tenantId": "11111111-2222-3333-4444-555555555555"
+   }
+  },
+  {
+   "kind": "AZUser",
+   "data": {
+    "id": "u-active",
+    "displayName": "bob_cloud",
+    "userPrincipalName": "bob_cloud@corp.local",
+    "accountEnabled": true,
+    "createdDateTime": "2025-08-14T07:46:48Z",
+    "tenantId": "11111111-2222-3333-4444-555555555555",
+    "signInActivity": {
+     "lastSignInDateTime": "2026-09-17T07:46:48Z"
+    }
+   }
+  },
+  {
+   "kind": "AZUser",
+   "data": {
+    "id": "u-disabled",
+    "displayName": "leaver",
+    "userPrincipalName": "leaver@corp.local",
+    "accountEnabled": false,
+    "createdDateTime": "2025-08-14T07:46:48Z",
+    "tenantId": "11111111-2222-3333-4444-555555555555",
+    "signInActivity": {
+     "lastSignInDateTime": "2025-05-06T07:46:48Z"
+    }
+   }
+  },
+  {
+   "kind": "AZRoleAssignment",
+   "data": {
+    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+    "principalId": "u-ga-old",
+    "directoryScopeId": "/"
+   }
+  },
+  {
+   "kind": "AZRoleAssignment",
+   "data": {
+    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+    "principalId": "u-ga-never",
+    "directoryScopeId": "/"
+   }
+  },
+  {
+   "kind": "AZRoleAssignment",
+   "data": {
+    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+    "principalId": "u-ga-active",
+    "directoryScopeId": "/"
+   }
+  },
+  {
+   "kind": "AZDevice",
+   "data": {
+    "id": "d-old",
+    "displayName": "LAPTOP-OLD",
+    "accountEnabled": true,
+    "operatingSystem": "Windows",
+    "trustType": "AzureAd",
+    "createdDateTime": "2024-07-10T07:46:48Z",
+    "approximateLastSignInDateTime": "2025-08-14T07:46:48Z"
+   }
+  },
+  {
+   "kind": "AZDevice",
+   "data": {
+    "id": "d-never",
+    "displayName": "KIOSK-PRESTAGED",
+    "accountEnabled": true,
+    "operatingSystem": "Windows",
+    "trustType": "AzureAd",
+    "createdDateTime": "2026-05-21T07:46:48Z"
+   }
+  },
+  {
+   "kind": "AZDevice",
+   "data": {
+    "id": "d-active",
+    "displayName": "LAPTOP-OK",
+    "accountEnabled": true,
+    "operatingSystem": "Windows",
+    "trustType": "AzureAd",
+    "createdDateTime": "2025-11-22T07:46:48Z",
+    "approximateLastSignInDateTime": "2026-09-16T07:46:48Z"
+   }
+  },
+  {
+   "kind": "AZGroup",
+   "data": {
+    "id": "g-empty",
+    "displayName": "Project-Closed",
+    "securityEnabled": true,
+    "isAssignableToRole": false,
+    "tenantId": "11111111-2222-3333-4444-555555555555"
+   }
+  },
+  {
+   "kind": "AZGroup",
+   "data": {
+    "id": "g-single",
+    "displayName": "AAD-Role-Holders",
+    "securityEnabled": true,
+    "isAssignableToRole": true,
+    "tenantId": "11111111-2222-3333-4444-555555555555"
+   }
+  },
+  {
+   "kind": "AZGroup",
+   "data": {
+    "id": "g-ok",
+    "displayName": "All-Staff",
+    "securityEnabled": true,
+    "isAssignableToRole": false,
+    "tenantId": "11111111-2222-3333-4444-555555555555"
+   }
+  },
+  {
+   "kind": "AZGroupMember",
+   "data": {
+    "groupId": "g-single",
+    "member": {
+     "id": "u-active",
+     "@odata.type": "#microsoft.graph.user"
+    }
+   }
+  },
+  {
+   "kind": "AZGroupMember",
+   "data": {
+    "groupId": "g-ok",
+    "member": {
+     "id": "u-active",
+     "@odata.type": "#microsoft.graph.user"
+    }
+   }
+  },
+  {
+   "kind": "AZGroupMember",
+   "data": {
+    "groupId": "g-ok",
+    "member": {
+     "id": "u-old",
+     "@odata.type": "#microsoft.graph.user"
+    }
+   }
+  }
+ ],
+ "meta": {
+  "methods": 0,
+  "type": "azure",
+  "count": 20,
+  "version": 5
+ }
+}

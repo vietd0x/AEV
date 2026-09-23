@@ -1,0 +1,27 @@
+{
+ "data": [
+  {
+   "Properties": {
+    "domain": "CORP.LOCAL",
+    "name": "USERS@CORP.LOCAL",
+    "objectid": "OU-0001",
+    "distinguishedname": "OU=Users,DC=CORP,DC=LOCAL"
+   },
+   "ObjectIdentifier": "OU-0001",
+   "Aces": [],
+   "Links": [
+    {
+     "GUID": "GPO-0002",
+     "IsEnforced": false
+    }
+   ],
+   "ChildObjects": []
+  }
+ ],
+ "meta": {
+  "methods": 0,
+  "type": "ous",
+  "count": 1,
+  "version": 6
+ }
+}
