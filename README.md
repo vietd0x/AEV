@@ -1,7 +1,9 @@
 # AD Exposure Viewer — BloodHound Indicators of Exposure
 
 A **client-only** web app that reads the JSON produced by `bloodhound-python`
-(BloodHound CE / v5–v6) and presents Active Directory **Indicators of Exposure**
+(BloodHound CE / v5–v6) and presents Active Directory **Indicators of Exposure**.
+
+![AD Exposure Viewer dashboard](imgs/Untitled.png)
 
 All parsing and analysis run **in your browser**. No file is uploaded anywhere —
 suitable for sensitive AD collection data.
@@ -32,7 +34,7 @@ python -m http.server 8777
    to include the ones with zero findings, and **Export all** / per-indicator **Export CSV**.
 4. Each indicator's detail panel has a **BloodHound query** tab with the equivalent Cypher
    (copy-to-clipboard) so you can verify the same finding directly in BloodHound CE
-   (*Explore → Cypher*)
+   (*Explore → Cypher*).
    The full IoE-to-Cypher catalog, including checks this app does not implement, lives in
    `docs/modules/06-Identity-Exposure/REF-IoE-BloodHound-Cypher.md`.
 
@@ -84,7 +86,6 @@ When no AzureHound file is loaded these four indicators are reported as **not as
 rather than clean: they are hidden from the grid and counted separately in the header, so
 the dashboard never claims Entra ID is healthy on the strength of AD-only data.
 
-
 ## Project layout
 
 ```
@@ -96,6 +97,8 @@ bh-ioe/
 ├── js/bloodhound.js    # BloodHound CE parser + graph normalizer
 ├── js/checks.js        # detection logic, one function per indicator
 ├── js/app.js           # file loading, scoring, rendering, detail panel, CSV
+├── imgs/               # screenshots and project images
+│   └── Untitled.png
 └── sample/             # synthetic dataset generator + generated *_*.json
     └── generate_sample.py
 ```
